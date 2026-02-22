@@ -1,0 +1,90 @@
+{
+  "Animations": {
+    "Preshoot": {
+      "ThirdPerson": "Characters/Animations/Items/Dual_Handed/Jezzail/Attacks/Shoot/Hammer.blockyanim",
+      "ThirdPersonMoving": "Characters/Animations/Items/Dual_Handed/Jezzail/Attacks/Shoot/Hammer.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Dual_Handed/Jezzail/Attacks/Shoot/Hammer_FPS.blockyanim"
+    },
+    "Shoot": {
+      "ThirdPerson": "Characters/Animations/Items/Dual_Handed/Jezzail/Attacks/Shoot/Shoot.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Dual_Handed/Jezzail/Attacks/Shoot/Shoot_FPS.blockyanim",
+      "ThirdPersonMoving": "Characters/Animations/Items/Dual_Handed/Jezzail/Attacks/Shoot/Shoot_Moving.blockyanim",
+      "BlendingDuration": 0,
+      "ThirdPersonFace": "Characters/Animations/Expressions/Angry.blockyanim"
+    },
+    "Shoot_Big": {
+      "ThirdPerson": "Characters/Animations/Items/Dual_Handed/Jezzail/Attacks/Shoot/Shoot_Big.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Dual_Handed/Jezzail/Attacks/Shoot/Shoot_FPS_Big.blockyanim",
+      "ThirdPersonMoving": "Characters/Animations/Items/Dual_Handed/Jezzail/Attacks/Shoot/Shoot_Moving_Big.blockyanim",
+      "BlendingDuration": 0,
+      "ThirdPersonFace": "Characters/Animations/Expressions/Rage.blockyanim"
+    },
+    "Reload": {
+      "ThirdPerson": "Characters/Animations/Items/Dual_Handed/Jezzail/Attacks/Shoot/Reload.blockyanim",
+      "ThirdPersonMoving": "Characters/Animations/Items/Dual_Handed/Jezzail/Attacks/Shoot/Reload.blockyanim",
+      "Speed": 0.8,
+      "FirstPerson": "Characters/Animations/Items/Dual_Handed/Jezzail/Attacks/Shoot/Reload_FPS.blockyanim"
+    },
+    "Reload_Double": {
+      "ThirdPerson": "Characters/Animations/Items/Dual_Handed/Jezzail/Attacks/Shoot/Reload_Double.blockyanim",
+      "ThirdPersonMoving": "Characters/Animations/Items/Dual_Handed/Jezzail/Attacks/Shoot/Reload_Double.blockyanim",
+      "Speed": 0.8,
+      "FirstPerson": "Characters/Animations/Items/Dual_Handed/Jezzail/Attacks/Shoot/Reload_FPS_Double.blockyanim"
+    },
+    "Reload_Single": {
+      "ThirdPerson": "Characters/Animations/Items/Dual_Handed/Jezzail/Attacks/Shoot/Reload_Single.blockyanim",
+      "ThirdPersonMoving": "Characters/Animations/Items/Dual_Handed/Jezzail/Attacks/Shoot/Reload_Single.blockyanim",
+      "Speed": 0.8,
+      "FirstPerson": "Characters/Animations/Items/Dual_Handed/Jezzail/Attacks/Shoot/Reload_FPS_Single.blockyanim"
+    },
+    "SuperLaunch": {
+      "ThirdPerson": "Characters/Animations/Items/Dual_Handed/Jezzail/Attacks/Launch.blockyanim",
+      "ThirdPersonMoving": "Characters/Animations/Items/Dual_Handed/Jezzail/Attacks/Launch.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Dual_Handed/Jezzail/Attacks/Launch_FPS.blockyanim",
+      "BlendingDuration": 0.3
+    },
+    "Steady": {
+      "ThirdPerson": "Characters/Animations/Items/Dual_Handed/Jezzail/Attacks/Shoot/Hammerhold.blockyanim",
+      "ThirdPersonMoving": "Characters/Animations/Items/Dual_Handed/Jezzail/Attacks/Shoot/Hammerhold.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Dual_Handed/Jezzail/Attacks/Shoot/HammerHold_FPS.blockyanim",
+      "ThirdPersonFace": "Characters/Animations/Expressions/Frown.blockyanim"
+    }
+  },
+  "WiggleWeights": {
+    "X": 1,
+    "Y": 0.1,
+    "Pitch": 1,
+    "Z": 0.1,
+    "Roll": 0.1,
+    "XDeceleration": 0.2,
+    "YDeceleration": 0.2,
+    "ZDeceleration": 0.2,
+    "RollDeceleration": 0.2,
+    "PitchDeceleration": 0.2
+  },
+  "Camera": {
+    "Yaw": {
+      "TargetNodes": [
+        "Belly"
+      ],
+      "AngleRange": {
+        "Min": -45,
+        "Max": 45
+      }
+    },
+    "Pitch": {
+      "AngleRange": {
+        "Min": -30,
+        "Max": 30
+      },
+      "TargetNodes": [
+        "Belly"
+      ]
+    }
+  },
+  "Tags": {
+    "JumpFar": [],
+    "Shoot_Big": []
+  },
+  "Parent": "Rifle"
+}

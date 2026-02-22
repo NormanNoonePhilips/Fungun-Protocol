@@ -1,0 +1,53 @@
+{
+  "HitBox": {
+    "Max": {
+      "X": 0.05,
+      "Y": 0.05,
+      "Z": 0.05
+    },
+    "Min": {
+      "X": -0.05,
+      "Y": -0.05,
+      "Z": -0.05
+    }
+  },
+  "MinScale": 1,
+  "MaxScale": 1,
+  "Icon": "Icons/ModelsGenerated/I_Rocket.png",
+  "IconProperties": {
+    "Scale": 1,
+    "Rotation": [
+      323,
+      42,
+      0
+    ],
+    "Translation": [
+      1,
+      1
+    ]
+  },
+  "Trails": [
+    {
+      "TrailId": "Small_Flame"
+    },
+    {
+      "TrailId": "Small_Flame",
+      "RotationOffset": {
+        "Roll": 90
+      }
+    }
+  ],
+  "Model": "Items/Weapons/Bullet/Rocket.blockymodel",
+  "Texture": "Items/Weapons/Bullet/Rocket_Texture.png",
+  "Light": {
+    "Color": "#b73"
+  },
+  "Particles": [
+    {
+      "SystemId": "Rocket_Exhaust",
+      "PositionOffset": {
+        "Z": -0.25
+      }
+    }
+  ]
+}

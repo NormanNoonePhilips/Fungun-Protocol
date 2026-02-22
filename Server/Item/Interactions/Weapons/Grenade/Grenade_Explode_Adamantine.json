@@ -1,0 +1,7 @@
+{
+  "Type": "Explode",
+  "Config": {
+    "EntityDamage": 60
+  },
+  "Parent": "Grenade_Explode"
+}

@@ -1,0 +1,17 @@
+{
+  "Type": "ChangeStat",
+  "StatModifiers": {
+    "Ammo": 1
+  },
+  "Next": {
+    "Type": "Simple",
+    "RunTime": 2,
+    "Effects": {
+      "ItemPlayerAnimationsId": "Jezzail_Animations",
+      "ItemAnimationId": "Reload",
+      "WorldSoundEventId": "Jezzail_Reload",
+      "LocalSoundEventId": "Jezzail_Reload"
+    },
+    "HorizontalSpeedMultiplier": 0.5
+  }
+}

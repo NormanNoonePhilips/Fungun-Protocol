@@ -1,0 +1,64 @@
+{
+  "Model": "Grenade_Iron",
+  "SpawnRotationOffset": {
+    "Pitch": 10,
+    "Yaw": 0,
+    "Roll": 0
+  },
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 15,
+    "TerminalVelocityAir": 50,
+    "TerminalVelocityWater": 8,
+    "RotationMode": "VelocityRoll",
+    "Bounciness": 0.624,
+    "BounceCount": 5,
+    "AllowRolling": true,
+    "RollingFrictionFactor": 1,
+    "SticksVertically": false,
+    "ComputeYaw": true,
+    "ComputePitch": true,
+    "HitWaterImpulseLoss": 0,
+    "Density": 1600,
+    "BounceLimit": 0.2
+  },
+  "LaunchForce": 25,
+  "SpawnOffset": {
+    "X": 0.3,
+    "Y": 0.1,
+    "Z": 0.0
+  },
+  "Interactions": {
+    "ProjectileSpawn": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "Effects": {
+            "WorldSoundEventId": "Grenade_Throw",
+            "LocalSoundEventId": "Grenade_Throw"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Next": "Grenade_Explode_Iron",
+          "RunTime": 1
+        }
+      ]
+    },
+    "ProjectileBounce": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "Effects": {
+            "WorldSoundEventId": "Grenade_Bounce"
+          }
+        }
+      ]
+    },
+    "ProjectileHit": {
+      "Interactions": [
+        "Grenade_Explode_Iron"
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Weapons/Grenade/Grenade_Detonate.ogg"
+      ]
+    }
+  ],
+  "Volume": 10,
+  "MaxDistance": 40,
+  "StartAttenuationDistance": 3
+}

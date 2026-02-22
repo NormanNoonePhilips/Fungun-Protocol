@@ -1,0 +1,10 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Jezzail_Animations",
+    "ItemAnimationId": "Preshoot",
+    "ClearAnimationOnFinish": true,
+    "WorldSoundEventId": "Jezzail_Hammer"
+  },
+  "RunTime": 0.2
+}

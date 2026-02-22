@@ -1,0 +1,11 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Weapons/Jezzail/jezzail reload.ogg"
+      ],
+      "RoundRobinHistorySize": 0,
+      "Volume": 0.32
+    }
+  ]
+}

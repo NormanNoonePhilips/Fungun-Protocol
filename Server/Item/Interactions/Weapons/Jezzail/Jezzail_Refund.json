@@ -1,0 +1,20 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "Ammo": 1
+  },
+  "Next": {
+    "Type": "ModifyInventory",
+    "ItemToAdd": {
+      "Id": "Jezzail_Ammo_Shell",
+      "Quantity": 1
+    },
+    "Next": {
+      "Type": "ChangeActiveSlot"
+    }
+  },
+  "ValueType": "Absolute",
+  "Failed": {
+    "Type": "ChangeActiveSlot"
+  }
+}

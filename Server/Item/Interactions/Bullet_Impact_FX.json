@@ -1,0 +1,24 @@
+{
+  "Type": "Simple",
+  "Next": {
+    "Type": "Simple",
+    "Effects": {
+      "Particles": [
+        {
+          "SystemId": "Gun_Impact",
+          "TargetEntityPart": "Entity",
+          "TargetNodeName": "",
+          "PositionOffset": {
+            "Y": -0.2
+          },
+          "DetachedFromModel": false
+        }
+      ],
+      "WorldSoundEventId": "SFX_GunPvP_Assault_Rifle_Bullet_Death",
+      "LocalSoundEventId": "SFX_GunPvP_Assault_Rifle_Bullet_Death"
+    },
+    "Next": "Delete_Projectile"
+  },
+  "RunTime": 0.01,
+  "ViewDistance": 1000
+}

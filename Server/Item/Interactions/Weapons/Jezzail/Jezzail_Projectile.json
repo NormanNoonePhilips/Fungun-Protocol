@@ -1,0 +1,26 @@
+{
+  "Type": "Projectile",
+  "Config": "Jezzail_Bullet",
+  "Effects": {
+    "Particles": [
+      {
+        "SystemId": "Gun_Shooting",
+        "RotationOffset": {
+          "Pitch": 90
+        },
+        "PositionOffset": {
+          "Y": 0,
+          "Z": 1.5,
+          "X": -0.02
+        },
+        "Scale": 3
+      }
+    ],
+    "CameraEffect": "Handgun_Shoot",
+    "ItemPlayerAnimationsId": "Jezzail_Animations",
+    "ItemAnimationId": "Shoot",
+    "WorldSoundEventId": "SFX_Jezzail_Shoot"
+  },
+  "ViewDistance": 900,
+  "RunTime": 0.5
+}

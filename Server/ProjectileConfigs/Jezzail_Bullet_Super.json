@@ -1,0 +1,66 @@
+{
+  "Model": "I_Bullet_Jezzail_Super",
+  "SpawnRotationOffset": {
+    "Pitch": 0,
+    "Yaw": 0,
+    "Roll": 0
+  },
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 15,
+    "TerminalVelocityAir": 150,
+    "TerminalVelocityWater": 8,
+    "RotationMode": "VelocityDamped",
+    "Bounciness": 1,
+    "SticksVertically": true,
+    "BounceLimit": 0.4,
+    "BounceCount": 2,
+    "ComputeYaw": true,
+    "ComputePitch": true,
+    "HitWaterImpulseLoss": 0,
+    "Density": 1000
+  },
+  "LaunchForce": 100,
+  "SpawnOffset": {
+    "X": 0.1,
+    "Y": -0.1,
+    "Z": -2
+  },
+  "Interactions": {
+    "ProjectileSpawn": {
+      "Interactions": [
+        "Delete_Projectile_Delay_Long"
+      ]
+    },
+    "ProjectileBounce": {
+      "Interactions": [
+        {
+          "Type": "Replace",
+          "Var": "J_Explode"
+        }
+      ]
+    },
+    "ProjectileHit": {
+      "Interactions": [
+        {
+          "Type": "Replace",
+          "Var": "J_Damage"
+        },
+        {
+          "Type": "Replace",
+          "Var": "J_Explode"
+        },
+        "Delete_Projectile"
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        {
+          "Type": "Replace",
+          "Var": "J_Explode"
+        },
+        "Delete_Projectile"
+      ]
+    }
+  }
+}

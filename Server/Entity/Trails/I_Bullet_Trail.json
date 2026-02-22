@@ -1,0 +1,16 @@
+{
+  "TexturePath": "Trails/Fire.png",
+  "LifeSpan": 6,
+  "Roll": 0,
+  "Start": {
+    "Color": "rgba(#ffdb40, 0.867)",
+    "Width": 0.1
+  },
+  "End": {
+    "Color": "rgba(#ff6000, 0.251)",
+    "Width": 0
+  },
+  "LightInfluence": 0,
+  "Smooth": true,
+  "RenderMode": "BlendAdd"
+}

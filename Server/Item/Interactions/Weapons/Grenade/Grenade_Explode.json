@@ -1,0 +1,24 @@
+{
+  "Type": "Explode",
+  "Effects": {
+    "WorldSoundEventId": "Grenade_Explode",
+    "Particles": [
+      {
+        "SystemId": "Explosion_Medium",
+        "TargetEntityPart": "Entity",
+        "Scale": 2
+      }
+    ]
+  },
+  "Config": {
+    "DamageEntities": true,
+    "EntityDamageRadius": 9,
+    "EntityDamage": 1,
+    "DamageBlocks": true,
+    "BlockDamageRadius": 7,
+    "EntityDamageFalloff": 0.4,
+    "BlockDamageFalloff": 0.6
+  },
+  "Next": "Delete_Projectile",
+  "RunTime": 0.1
+}

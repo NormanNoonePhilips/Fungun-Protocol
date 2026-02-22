@@ -1,0 +1,159 @@
+{
+  "Texture": "Items/Weapons/Jezzail/Iron_Texture.png",
+  "Model": "Items/Weapons/Jezzail/Iron.blockymodel",
+  "Icon": "Icons/ItemsGenerated/Jezzail_Template.png",
+  "IconProperties": {
+    "Scale": 0.3,
+    "Rotation": [
+      326,
+      58,
+      0
+    ],
+    "Translation": [
+      -8,
+      -18
+    ]
+  },
+  "Interactions": {
+    "Primary": {
+      "Interactions": [
+        "Jezzail_Ammo_Check"
+      ],
+      "Tags": {
+        "Attack": [
+          "Ranged"
+        ]
+      }
+    },
+    "Secondary": {
+      "Interactions": [
+        "Jezzail_Steady"
+      ],
+      "Tags": {
+        "Attack": [
+          "Ranged"
+        ]
+      }
+    },
+    "SwapFrom": "Jezzail_Refund",
+    "Ability3": {
+      "Interactions": [
+        "Jezzail_Ammo_Check_Manual"
+      ]
+    },
+    "Ability1": {
+      "Interactions": [
+        "Jezzail_Super_Check"
+      ]
+    }
+  },
+  "Categories": [
+    "Items.Weapons"
+  ],
+  "Reticle": "Reticle_Jezzail",
+  "PlayerAnimationsId": "Jezzail_Animations",
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Jezzail_Template.name",
+    "Description": "server.items.Weapon_Jezzail.description"
+  },
+  "Weapon": {
+    "StatModifiers": {
+      "Ammo": [
+        {
+          "Amount": 1,
+          "CalculationType": "Additive"
+        }
+      ],
+      "SignatureEnergy": [
+        {
+          "Amount": 8,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "EntityStatsToClear": [
+      "SignatureEnergy",
+      "Ammo"
+    ]
+  },
+  "DisplayEntityStatsHUD": [
+    "Ammo"
+  ],
+  "InteractionVars": {
+    "J_Damage": {
+      "Interactions": [
+        {
+          "Type": "DamageEntity",
+          "DamageCalculator": {
+            "Class": "Light",
+            "BaseDamage": {
+              "Projectile": 2
+            },
+            "RandomPercentageModifier": 0.1
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 1
+            }
+          ],
+          "Next": "DamageEntityParent",
+          "DamageEffects": {
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 1,
+              "VelocityY": 8,
+              "RelativeZ": -12
+            }
+          },
+          "ViewDistance": 1000
+        }
+      ]
+    },
+    "J_Explode": {
+      "Interactions": [
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "EntityDamageRadius": 12,
+            "EntityDamageFalloff": 0.6,
+            "EntityDamage": 2,
+            "DamageBlocks": false,
+            "BlockDamageRadius": 0
+          },
+          "Effects": {
+            "Particles": [
+              {
+                "SystemId": "Explosion_Small",
+                "TargetEntityPart": "Entity",
+                "DetachedFromModel": true,
+                "PositionOffset": {
+                  "Y": 0,
+                  "X": 0
+                }
+              }
+            ],
+            "WorldSoundEventId": "Jezzail_Ricochet"
+          },
+          "ViewDistance": 1000
+        }
+      ]
+    }
+  },
+  "Quality": "Debug",
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ],
+    "Family": [
+      "Gun"
+    ],
+    "Mod": [
+      "BringTheBoom"
+    ]
+  },
+  "MaxDurability": 120,
+  "DurabilityLossOnHit": 1,
+  "ItemSoundSetId": "ISS_Items_Gadget"
+}

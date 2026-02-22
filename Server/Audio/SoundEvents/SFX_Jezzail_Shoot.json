@@ -1,0 +1,14 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Weapons/Jezzail/Jezzailshoot.ogg"
+      ],
+      "Volume": 1.2
+    }
+  ],
+  "Volume": 3.4,
+  "MaxDistance": 40,
+  "StartAttenuationDistance": 12,
+  "Pitch": 0
+}

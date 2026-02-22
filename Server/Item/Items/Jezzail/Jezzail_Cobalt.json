@@ -1,0 +1,114 @@
+{
+  "Texture": "Items/Weapons/Jezzail/Cobalt_Texture.png",
+  "Model": "Items/Weapons/Jezzail/Cobalt.blockymodel",
+  "Icon": "Icons/ItemsGenerated/Jezzail_Cobalt.png",
+  "IconProperties": {
+    "Scale": 0.3,
+    "Rotation": [
+      326,
+      58,
+      0
+    ],
+    "Translation": [
+      -8,
+      -18
+    ]
+  },
+  "PlayerAnimationsId": "Jezzail_Animations",
+  "InteractionVars": {
+    "J_Damage": {
+      "Interactions": [
+        {
+          "Type": "DamageEntity",
+          "DamageCalculator": {
+            "Class": "Light",
+            "BaseDamage": {
+              "Projectile": 56
+            },
+            "RandomPercentageModifier": 0.1
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 1
+            }
+          ],
+          "Next": "DamageEntityParent",
+          "DamageEffects": {
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 1,
+              "VelocityY": 8,
+              "RelativeZ": -12
+            }
+          },
+          "ViewDistance": 1000
+        }
+      ]
+    },
+    "J_Explode": {
+      "Interactions": [
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "EntityDamageRadius": 12,
+            "EntityDamageFalloff": 0.6,
+            "EntityDamage": 28,
+            "DamageBlocks": false,
+            "BlockDamageRadius": 0
+          },
+          "Effects": {
+            "Particles": [
+              {
+                "SystemId": "Explosion_Small",
+                "TargetEntityPart": "Entity",
+                "DetachedFromModel": true,
+                "PositionOffset": {
+                  "Y": 0,
+                  "X": 0
+                }
+              }
+            ],
+            "WorldSoundEventId": "Jezzail_Ricochet"
+          },
+          "ViewDistance": 1000
+        }
+      ]
+    }
+  },
+  "Quality": "Rare",
+  "MaxDurability": 130,
+  "DurabilityLossOnHit": 1,
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Jezzail_Cobalt.name"
+  },
+  "Parent": "Jezzail_Template",
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Weapon_Jezzail"
+        ],
+        "Id": "Grenadier_Bench",
+        "RequiredTierLevel": 2
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Cobalt",
+        "Quantity": 11
+      },
+      {
+        "ItemId": "Ingredient_Leather_Heavy",
+        "Quantity": 2
+      },
+      {
+        "ItemId": "Ingredient_Fabric_Scrap_Shadoweave",
+        "Quantity": 3
+      }
+    ],
+    "TimeSeconds": 4
+  }
+}

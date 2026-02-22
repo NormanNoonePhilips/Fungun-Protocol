@@ -1,0 +1,11 @@
+{
+  "SpawnOffset": {
+    "X": 0.1,
+    "Y": -0.07,
+    "Z": -2
+  },
+  "Parent": "Jezzail_Bullet",
+  "Physics": {
+    "Type": "Standard"
+  }
+}

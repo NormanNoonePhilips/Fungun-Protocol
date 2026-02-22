@@ -1,0 +1,8 @@
+{
+  "Type": "Explode",
+  "Config": {
+    "EntityDamage": 50
+  },
+  "Next": "Delete_Projectile",
+  "Parent": "Grenade_Explode"
+}

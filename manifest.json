@@ -1,0 +1,21 @@
+{
+  "Group": "Nox's Managerie",
+  "Name": "FunGun Protocol",
+  "Version": "0.0.1",
+  "Description": "Adds absurd firearms to Hytale",
+  "Authors": [
+    {
+      "Name": "Norman Noone",
+      "Email": "",
+      "Url": ""
+    }
+  ],
+  "Website": "",
+  "ServerVersion": "",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "LoadBefore": {},
+  "DisabledByDefault": false,
+  "IncludesAssetPack": true,
+  "SubPlugins": []
+}

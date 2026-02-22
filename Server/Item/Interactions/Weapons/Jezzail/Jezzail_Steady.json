@@ -1,0 +1,38 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "Ammo": 1
+  },
+  "Failed": "Jezzail_Bullet_Check",
+  "Next": {
+    "Type": "Charging",
+    "AllowIndefiniteHold": true,
+    "HorizontalSpeedMultiplier": 0.5,
+    "Effects": {
+      "WorldSoundEventId": "Jezzail_Hammer",
+      "ItemPlayerAnimationsId": "Jezzail_Animations",
+      "ItemAnimationId": "Steady",
+      "ClearAnimationOnFinish": true
+    },
+    "Forks": {
+      "Primary": {
+        "Interactions": [
+          {
+            "Type": "ChangeStat",
+            "StatModifiers": {
+              "Ammo": -1
+            },
+            "Next": {
+              "Type": "ModifyInventory",
+              "Next": "Jezzail_Projectile_Steady"
+            }
+          }
+        ]
+      }
+    },
+    "CancelOnOtherClick": true,
+    "MouseSensitivityAdjustmentTarget": 0.4,
+    "MouseSensitivityAdjustmentDuration": 0.1,
+    "CancelOnItemChange": true
+  }
+}

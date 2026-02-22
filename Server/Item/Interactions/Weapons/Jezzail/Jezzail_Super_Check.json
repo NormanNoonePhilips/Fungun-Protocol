@@ -1,0 +1,30 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "SignatureEnergy": 100
+  },
+  "Next": {
+    "Type": "Simple",
+    "HorizontalSpeedMultiplier": 0,
+    "RunTime": 1,
+    "Next": {
+      "Type": "ChangeStat",
+      "Next": "Jezzail_Projectile_Super",
+      "StatModifiers": {
+        "SignatureEnergy": 0
+      },
+      "Behaviour": "Set"
+    },
+    "Effects": {
+      "Particles": [
+        {
+          "SystemId": "Mace_Charging",
+          "TargetEntityPart": "PrimaryItem",
+          "TargetNodeName": "Origin_Projectile"
+        }
+      ],
+      "LocalSoundEventId": "Jezzail_Focus"
+    }
+  },
+  "ValueType": "Percent"
+}

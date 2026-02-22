@@ -1,0 +1,12 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Fire_Projectile_Fire_Trail"
+    },
+    {
+      "SpawnerId": "Fire_Projectile_Fire_Core"
+    }
+  ],
+  "CullDistance": 1000,
+  "IsImportant": true
+}

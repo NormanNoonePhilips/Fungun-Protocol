@@ -1,0 +1,28 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "Ammo": 1
+  },
+  "ValueType": "Absolute",
+  "Next": {
+    "Type": "ChangeStat",
+    "StatModifiers": {
+      "Ammo": -1
+    },
+    "Next": {
+      "Type": "Simple",
+      "Effects": {
+        "ItemPlayerAnimationsId": "Jezzail_Animations",
+        "ItemAnimationId": "Preshoot",
+        "WorldSoundEventId": "Jezzail_Hammer",
+        "LocalSoundEventId": "Jezzail_Hammer"
+      },
+      "RunTime": 0.2,
+      "Next": {
+        "Type": "ModifyInventory",
+        "Next": "Jezzail_Projectile"
+      }
+    }
+  },
+  "Failed": "Jezzail_Bullet_Check"
+}

@@ -1,0 +1,42 @@
+{
+  "HitBox": {
+    "Max": {
+      "X": 0.05,
+      "Y": 0.05,
+      "Z": 0.05
+    },
+    "Min": {
+      "X": -0.05,
+      "Y": -0.05,
+      "Z": -0.05
+    }
+  },
+  "MinScale": 1,
+  "MaxScale": 1,
+  "Icon": "Icons/ModelsGenerated/I_Nail.png",
+  "IconProperties": {
+    "Scale": 1,
+    "Rotation": [
+      0,
+      -45,
+      0
+    ],
+    "Translation": [
+      0,
+      -10
+    ]
+  },
+  "Model": "Items/Weapons/Bullet/Rivet.blockymodel",
+  "Texture": "Items/Weapons/Bullet/Bullet_Texture.png",
+  "Trails": [
+    {
+      "TrailId": "I_Nail_Trail"
+    },
+    {
+      "TrailId": "I_Nail_Trail",
+      "RotationOffset": {
+        "Roll": 90
+      }
+    }
+  ]
+}

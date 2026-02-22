@@ -1,0 +1,20 @@
+{
+  "Type": "ModifyInventory",
+  "ItemToRemove": {
+    "Id": "Jezzail_Ammo_Shell",
+    "Quantity": 1
+  },
+  "Failed": {
+    "Type": "Simple",
+    "Effects": {
+      "ItemPlayerAnimationsId": "Jezzail_Animations",
+      "ItemAnimationId": "Preshoot",
+      "ClearAnimationOnFinish": true,
+      "WorldSoundEventId": "Jezzail_Hammer",
+      "LocalSoundEventId": "Jezzail_Hammer"
+    },
+    "RunTime": 0.2
+  },
+  "Next": "Jezzail_Load",
+  "RunTime": 0.05
+}

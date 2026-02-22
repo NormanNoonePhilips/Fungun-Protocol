@@ -1,0 +1,17 @@
+{
+  "Texture": "Items/Weapons/Sidewinders/Iron_Texture.png",
+  "Model": "Items/Weapons/Sidewinders/Iron.blockymodel",
+  "Icon": "Icons/ItemsGenerated/Icon_Generator.png",
+  "IconProperties": {
+    "Scale": 0.3,
+    "Rotation": [
+      315,
+      90,
+      0
+    ],
+    "Translation": [
+      10,
+      -18
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "Model": "I_Bullet",
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 10,
+    "TerminalVelocityAir": 500,
+    "TerminalVelocityWater": 8,
+    "RotationMode": "None",
+    "HitWaterImpulseLoss": 0,
+    "Density": 1000
+  },
+  "LaunchForce": 500,
+  "SpawnOffset": {
+    "X": 0.2,
+    "Y": -0.1,
+    "Z": -2
+  },
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        {
+          "Type": "Replace",
+          "Var": "J_Damage",
+          "DefaultValue": {
+            "Interactions": [
+              {
+                "Type": "DamageEntity",
+                "DamageCalculator": {
+                  "BaseDamage": {
+                    "Projectile": 20
+                  },
+                  "Class": "Light"
+                },
+                "ViewDistance": 1000
+              }
+            ]
+          },
+          "DefaultOk": true,
+          "ViewDistance": 1000
+        },
+        "Bullet_Impact_FX"
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        "Bullet_Impact_FX",
+        "Delete_Projectile"
+      ]
+    },
+    "ProjectileSpawn": {
+      "Interactions": [
+        "Delete_Projectile_Delay_Medium"
+      ]
+    }
+  }
+}

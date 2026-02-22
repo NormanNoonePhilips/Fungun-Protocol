@@ -1,0 +1,13 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Weapons/Grenade/Grenade_Throw.ogg"
+      ],
+      "RandomSettings": {
+        "MinPitch": -1.632,
+        "MaxPitch": 1.632
+      }
+    }
+  ]
+}
